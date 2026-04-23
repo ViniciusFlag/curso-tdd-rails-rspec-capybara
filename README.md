@@ -67,3 +67,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * be_odd: verifica se é impar
 * be_even: verifica se par
 * todo metodo que termina com ?, nos testes se acrescenta o be_
+
+*Erros*
+* raise_exception: ele é usado a partir de um bloco{} e vai indicar se uma exceção foi levantada
+* raise_error: verifica se uma exceção especifica acontece
