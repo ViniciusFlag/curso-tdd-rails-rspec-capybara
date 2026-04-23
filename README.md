@@ -76,3 +76,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * Include: inclui um ou mais valores no array
 * match_array: verifica se um array é exatamente igual ao outro
 * contain_exactly: funciona da mesma forma que o match_array, porem não precisa usar os [] e não precisa estar na mesma ordem, mas precisa ter o mesmo conteudo
+
+*Ranges*
+* cover: verifica se possui um ou mais valor dentro de um range
