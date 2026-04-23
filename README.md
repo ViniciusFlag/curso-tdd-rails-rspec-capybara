@@ -35,8 +35,14 @@ os arquivos de testes devem conter o sufixo _spec no nome
 * xit: é como o it sem corpo, não é executado e ele fica como 'PENDING'
 
 # Metchers (rspec-expectations)
-* cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()not_to) para um objeto
+cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()not_to) para um objeto
 
 *Igualdade*
 * equal e be: compara um objeto com outro
 * eql e eq: testa um valor com outro
+
+*Verdadeiro e falso*
+* be true ou be false: testa se é verdadeiro ou falso
+* be_truthy: testa se é verdadeiro
+* be_falsey: testa se é falso
+* be_nil: testa se é vazio
