@@ -86,3 +86,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Composição de Expectativas*
 * OR/AND: é utilizado para concatenar mais de um match: (ex: it { is_expected.to start_with("Ruby").and end_with("Rails") })
+
+*Coleções*
+* all: verifica que todos são ou estão em algum determinado estado: (ex: it { is_expected.to all (be_odd) })
