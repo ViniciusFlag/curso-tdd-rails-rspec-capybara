@@ -92,3 +92,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *be_within*
 é para trabalhar com numeros flutuantes, faz a verificação da diferená dentro de um range de um valor a outro: (ex: it { expecte(12.5).to be_within(0.5).of(12) }) # 11.5 - 11.6 - 11.7 - 11.8 - 11.9 - 12 - 12.1 - 12.2 - 12.3 - 12.4 - 12.5 
+
+*Satisfy*
+* ele permite fazer a execução de um bloco de codigo, que satisfaça uma expressão: (ex: it { expect(10).to satisfy { |x| x % 2 == 0 } })
