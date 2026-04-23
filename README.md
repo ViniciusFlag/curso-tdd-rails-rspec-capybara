@@ -79,3 +79,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Ranges*
 * cover: verifica se possui um ou mais valor dentro de um range
+
+*one-liner syntax*
+* Permite trocar o expect(subject) por is_epected
+* Posso utilizar da sequinte forma, it { is_expected.to cover(2) }, o proprio teste se torna o contexto
