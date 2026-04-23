@@ -36,3 +36,7 @@ os arquivos de testes devem conter o sufixo _spec no nome
 
 # Metchers (rspec-expectations)
 * cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()not_to) para um objeto
+
+*Igualdade*
+* equal e be: compara um objeto com outro
+* eql e eq: testa um valor com outro
