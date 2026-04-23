@@ -51,7 +51,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * be < ou <=, > ou >=: verificam maior ou maior igual, menor ou meno igual
 * be_between(min, max).incluse ou .exclusive: verifica entre um range de numeros, incluindo ou não o numero inicial e o final
 * match(/regex/): faz comparação usando expressão regular
-* star_with: espera que inicie com um determinado valor que pode ser string ou array
+* start_with/staring_with: espera que inicie com um determinado valor que pode ser string ou array
 * end_with: espera que termine com um determinado valor que pode ser string ou array
 
 *Classe e tipo*
@@ -59,3 +59,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * be_kind_of: verifica qual é o tipo da instancia (precisa informar qual é o tipo), pode ser por herança
 * respond_to: verifica se uma classe responde a um determinado metodo
 * be_a / be_an: verifica o tipo, semelhante ao be_kind_of
+
+*Atributo de classes*
+* have_attributes: verifica se existe um atributo ou valor atribuido a ele dentro de uma classe
