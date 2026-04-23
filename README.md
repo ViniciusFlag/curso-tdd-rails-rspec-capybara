@@ -11,6 +11,8 @@ bundle install
 -- rspec # roda os testes
 -- rspec spec/caminho_arquivo_spec.rb # executa arquivo especifico
 os arquivos de testes devem conter o sufixo _spec no nome
+-- rspec spec/caminho_arquivo_spec.rb -e 'titulo' # roda o teste no titulo especifico do arquivo
+-- rspec spec/caminho_arquivo_spec.rb:linha # roda o teste na linha especifica do arquivo
 
 -- it, specify ou example: diz qual é o teste que sera feito naquele momento, e o nome vai da forma como quem esta criado os teste vai usar
 -- expect: indica qual é o resulta esperado
@@ -29,3 +31,5 @@ os arquivos de testes devem conter o sufixo _spec no nome
 # BDD - RSpec
 * context: agrupa o conteudo a ser textado, é a narrativa do que ira acontecer
 * subject: substitui o objeto da classe que esta sendo testada
+* it: descreve um methodo, aquilo que ele ira fazer
+* xit: é como o it sem corpo, não é executado e ele fica como 'PENDING'
