@@ -46,3 +46,10 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * be_truthy: testa se é verdadeiro
 * be_falsey: testa se é falso
 * be_nil: testa se é vazio
+
+*Compração*
+* be < ou <=, > ou >=: verificam maior ou maior igual, menor ou meno igual
+* be_between(min, max).incluse ou .exclusive: verifica entre um range de numeros, incluindo ou não o numero inicial e o final
+* match(/regex/): faz comparação usando expressão regular
+* star_with: espera que inicie com um determinado valor que pode ser string ou array
+* end_with: espera que termine com um determinado valor que pode ser string ou array
