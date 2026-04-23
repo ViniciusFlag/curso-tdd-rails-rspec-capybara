@@ -83,3 +83,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 *one-liner syntax*
 * Permite trocar o expect(subject) por is_epected
 * Posso utilizar da sequinte forma, it { is_expected.to cover(2) }, o proprio teste se torna o contexto
+
+*Composição de Expectativas*
+* OR/AND: é utilizado para concatenar mais de um match: (ex: it { is_expected.to start_with("Ruby").and end_with("Rails") })
