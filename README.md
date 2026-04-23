@@ -62,3 +62,8 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Atributo de classes*
 * have_attributes: verifica se existe um atributo ou valor atribuido a ele dentro de uma classe
+
+*Metodos predicados (retornam um valor booleano)*
+* be_odd: verifica se é impar
+* be_even: verifica se par
+* todo metodo que termina com ?, nos testes se acrescenta o be_
