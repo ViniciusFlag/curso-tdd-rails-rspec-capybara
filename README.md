@@ -71,3 +71,8 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 *Erros*
 * raise_exception: ele é usado a partir de um bloco{} e vai indicar se uma exceção foi levantada
 * raise_error: verifica se uma exceção especifica acontece
+
+*Arrays*
+* Include: inclui um ou mais valores no array
+* match_array: verifica se um array é exatamente igual ao outro
+* contain_exactly: funciona da mesma forma que o match_array, porem não precisa usar os [] e não precisa estar na mesma ordem, mas precisa ter o mesmo conteudo
