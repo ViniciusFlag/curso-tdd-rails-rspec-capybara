@@ -25,3 +25,6 @@ os arquivos de testes devem conter o sufixo _spec no nome
 * Esxercise: é a interação com o SUT
 * Verify: quando voce verifica o comportamento esperado
 * Teardown: volta o sistema ao estado original antes do teste, o rspec faz isso automatico
+
+# BDD
+* context: agrupa o conteudo a ser textado, é a narrativa do que ira acontecer
