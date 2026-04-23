@@ -26,5 +26,6 @@ os arquivos de testes devem conter o sufixo _spec no nome
 * Verify: quando voce verifica o comportamento esperado
 * Teardown: volta o sistema ao estado original antes do teste, o rspec faz isso automatico
 
-# BDD
+# BDD - RSpec
 * context: agrupa o conteudo a ser textado, é a narrativa do que ira acontecer
+* subject: substitui o objeto da classe que esta sendo testada
