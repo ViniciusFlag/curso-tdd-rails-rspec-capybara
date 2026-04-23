@@ -53,3 +53,9 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * match(/regex/): faz comparação usando expressão regular
 * star_with: espera que inicie com um determinado valor que pode ser string ou array
 * end_with: espera que termine com um determinado valor que pode ser string ou array
+
+*Classe e tipo*
+* be_instance_of: verifica qual é o tipo da instancia (precisa informar qual é o tipo), faz para a classe exata
+* be_kind_of: verifica qual é o tipo da instancia (precisa informar qual é o tipo), pode ser por herança
+* respond_to: verifica se uma classe responde a um determinado metodo
+* be_a / be_an: verifica o tipo, semelhante ao be_kind_of
