@@ -33,3 +33,6 @@ os arquivos de testes devem conter o sufixo _spec no nome
 * subject: substitui o objeto da classe que esta sendo testada
 * it: descreve um methodo, aquilo que ele ira fazer
 * xit: é como o it sem corpo, não é executado e ele fica como 'PENDING'
+
+# Metchers (rspec-expectations)
+* cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()not_to) para um objeto

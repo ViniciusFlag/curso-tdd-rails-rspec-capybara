@@ -7,7 +7,8 @@ describe Calculator, "Sobre a calculadora" do
         it "positive numbers" do
             # result = subject.sum(5,7) # subject implicito
             result = calc.sum(5,7) # subject explicito
-            expect(result).to eq(12)
+            # expect(result).to eq(12)
+            expect(result).not_to eq(1)
         end
         
         it "negative and positive numbers" do
