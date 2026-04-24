@@ -120,3 +120,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 *Hooks (around)*
 -- Substitui o before e o after
 * ele utiliza da mesma forma que o before e after, a diferença é que ele pode ser dividido em blocos, digamos que voce queira executar algo antes e algo depois, são dois blocos diferentes e que são separados pelo run, o primeiro bloco é "rodado" pelo .run, separando um bloco do outro e executando o que estava a cima
+
+*let e let!*
+* let: quando voce precisa atribuir uma variavel de instancia, ao ives de utilizar um bloco before para isso, pode-se usar o let. Ao ser usado, a variavel é carregada apenas quando utilizada pela primeira vez e fica ativa em cache até o teste finalizar
+* let!: força a execução antes do teste, semelhante ao que acontece com o before
