@@ -175,7 +175,10 @@ end
 * para atribuir uma mensagem a um double, devemos usar o allow(double).to receive_messages(attr1: "Txt1", ...)
 * Existem alguns tipos de dubles de testes, como:
     * mok object
-    * stup
+    * stubs
     * spy
     * fake object
     * dummy object
+
+*Stubs*
+* Força uma resposta especifica para um determinado método de um objeto colaborador
