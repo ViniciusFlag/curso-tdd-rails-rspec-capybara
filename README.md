@@ -102,13 +102,13 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Hooks (before e after)*
 [esles podem ser executados na congiguração do spec(spec_helper) ou no teste]
-[before]
+*before*
 * before(:suite): é executado antes de toda suite de teste
 * before(:all): antes de todos os testes
 * before(:context): antes de todos os testes
 * before(:each): antes de cada teste
 * before(:example): antes de cada teste
-[after]
+*after*
 * after(:suite): é executado depois de toda suite de teste
 * after(:all): depois de todos os testes
 * after(:context): depois de todos os testes
