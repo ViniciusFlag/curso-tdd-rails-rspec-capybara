@@ -147,3 +147,19 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * são os testes compartilhados
 * capitalize: deixa a primeira letra de um texto em maiusculo
 * send: é uma forma dinamica para utilizar um metodo
+
+*Customizando matchers*
+se utiliza desta forma
+RSpec::Matchers.define :matcher_name do |expected|
+
+match do |actual|
+    #contexto
+end
+pode-se customizar a mensagem de erro e sucesso também
+failure_message do |actual|
+    "message"
+end
+
+desciption do
+    "message"
+end
