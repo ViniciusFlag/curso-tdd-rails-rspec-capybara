@@ -135,3 +135,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 [output.to_stdout]
 [output.to_stderr]
+
+*Negativando*
+* É quando voce define a operação inversa de um matcher: (ex: RSpec::Matchers.define_negated_matcher :exclude, :include)
