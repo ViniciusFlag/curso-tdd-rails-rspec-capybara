@@ -142,3 +142,8 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 *Agregando Falhas*
 * quando temos mais de uma saida em um teste, caso tenha um com erro, ele trava neste e não termina de executar aquele teste, para isso, pode-se usar o aggregate_failures.
 * posso fazer a configuração por teste ou configurar no spec_helper e todo o codigo ira conter o aggregate
+
+*Shared Examples*
+* são os testes compartilhados
+* capitalize: deixa a primeira letra de um texto em maiusculo
+* send: é uma forma dinamica para utilizar um metodo
