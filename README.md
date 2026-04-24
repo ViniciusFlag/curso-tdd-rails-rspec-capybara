@@ -138,3 +138,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Negativando*
 * É quando voce define a operação inversa de um matcher: (ex: RSpec::Matchers.define_negated_matcher :exclude, :include)
+
+*Agregando Falhas*
+* quando temos mais de uma saida em um teste, caso tenha um com erro, ele trava neste e não termina de executar aquele teste, para isso, pode-se usar o aggregate_failures.
+* posso fazer a configuração por teste ou configurar no spec_helper e todo o codigo ira conter o aggregate
