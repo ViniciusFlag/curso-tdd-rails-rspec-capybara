@@ -168,3 +168,14 @@ end
 *tag filters*
 * voce define um tipo para um teste: key:true ou key:value
 * voce pode executar apenas os teste que contenham uma tag especifica: rspec . -t key_tag_name ou key_tag:value
+
+*Tests Doubles/Dubles de Testes*
+* é um termo generico para qualquer objeto falso, que é utilizado no lugar de um objeto real
+* o objeto double pode ou não receber "mensagens" (métodos)
+* para atribuir uma mensagem a um double, devemos usar o allow(double).to receive_messages(attr1: "Txt1", ...)
+* Existem alguns tipos de dubles de testes, como:
+    * mok object
+    * stup
+    * spy
+    * fake object
+    * dummy object
