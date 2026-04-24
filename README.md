@@ -149,6 +149,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * send: é uma forma dinamica para utilizar um metodo
 
 *Customizando matchers*
+
 se utiliza desta forma
 RSpec::Matchers.define :matcher_name do |expected|
 
@@ -163,3 +164,7 @@ end
 desciption do
     "message"
 end
+
+*tag filters*
+* voce define um tipo para um teste: key:true ou key:value
+* voce pode executar apenas os teste que contenham uma tag especifica: rspec . -t key_tag_name ou key_tag:value
