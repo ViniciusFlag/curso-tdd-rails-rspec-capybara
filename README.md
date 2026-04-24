@@ -127,3 +127,11 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Change*
 * Ele espera que seja feita uma mudança: (ex: it { expect(Contador.incrementa).to change { Contador.qtd } })
+
+*Output*
+* STDOUT(saida padrao): é monitor, quando usamos o puts por exemplo, ele é exibido na saida padrao
+* STDIN(entrada padrao): é representado pelo teclado, é o que esta sendo digitado
+* STDERR(erro padrao): quando o sitema recebe uma entrada de erro
+
+[output.to_stdout]
+[output.to_stderr]
