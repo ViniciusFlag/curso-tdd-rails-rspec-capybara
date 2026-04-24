@@ -101,7 +101,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * Módulos: é um arquivo a parte com modulos auxiliares, mas preciso inclur onde sera utilizado, pode ser dentro de um contexto ou se for utilizar em todo o codigo, pode ser colocado no spec_helper
 
 *Hooks (before e after)*
--- esles podem ser executados na congiguração do spec(spec_helper) ou no teste
+-- eles podem ser executados na congiguração do spec(spec_helper) ou no teste
 
 *before*
 * before(:suite): é executado antes de toda suite de teste
@@ -116,3 +116,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 * after(:context): depois de todos os testes
 * after(:each): depois de cada teste
 * after(:example): depois de cada teste
+
+*Hooks (around)*
+-- Substitui o before e o after
+* ele utiliza da mesma forma que o before e after, a diferença é que ele pode ser dividido em blocos, digamos que voce queira executar algo antes e algo depois, são dois blocos diferentes e que são separados pelo run, o primeiro bloco é "rodado" pelo .run, separando um bloco do outro e executando o que estava a cima

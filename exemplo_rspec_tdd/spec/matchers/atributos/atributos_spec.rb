@@ -1,11 +1,22 @@
 require "pessoa"
 
 describe "Atributos" do
-    before(:each) do 
+    # before(:each) do 
+    #     puts "Antes de cada teste"
+    #     @pessoa = Pessoa.new
+    # end
+    # after(:each) do # a saida no console vai ser exibida antes da execução do teste, mas o rspec executa depois, apenas a saida que não fica na ordem
+    #     puts "Depois de cada teste"
+    #     @pessoa.nome = "Sem nome"
+    #     puts "#{@pessoa.inspect}"
+    # end
+
+    around(:each) do |teste|
         puts "Antes de cada teste"
         @pessoa = Pessoa.new
-    end
-    after(:each) do # a saida no console vai ser exibida antes da execução do teste, mas o rspec executa depois, apenas a saida que não fica na ordem
+
+        teste.run
+        
         puts "Depois de cada teste"
         @pessoa.nome = "Sem nome"
         puts "#{@pessoa.inspect}"
