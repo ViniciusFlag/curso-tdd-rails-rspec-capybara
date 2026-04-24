@@ -95,3 +95,7 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 
 *Satisfy*
 * ele permite fazer a execução de um bloco de codigo, que satisfaça uma expressão: (ex: it { expect(10).to satisfy { |x| x % 2 == 0 } })
+
+*Helper Methods*
+* Arbitrários: são metodos auxiliares
+* Módulos: é um arquivo a parte com modulos auxiliares, mas preciso inclur onde sera utilizado, pode ser dentro de um contexto ou se for utilizar em todo o codigo, pode ser colocado no spec_helper
