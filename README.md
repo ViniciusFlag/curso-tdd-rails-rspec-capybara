@@ -124,3 +124,6 @@ cada matcher pode ser definido como positivo(expect().to) ou negativo(expect()no
 *let e let!*
 * let: quando voce precisa atribuir uma variavel de instancia, ao ives de utilizar um bloco before para isso, pode-se usar o let. Ao ser usado, a variavel é carregada apenas quando utilizada pela primeira vez e fica ativa em cache até o teste finalizar
 * let!: força a execução antes do teste, semelhante ao que acontece com o before
+
+*Change*
+* Ele espera que seja feita uma mudança: (ex: it { expect(Contador.incrementa).to change { Contador.qtd } })
