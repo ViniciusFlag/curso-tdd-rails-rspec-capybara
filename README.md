@@ -187,3 +187,8 @@ end
 * restrição de argumentos: 
     * with: restrige quais argumentos um metodo vai receber
 * argumentos dinamicos:
+
+*Mocks*
+* são usado no verify, testam comportamentos
+* mocks expectations: expect(obj). to receive(:method)
+* dentro de um bloco de testes, temos as 4 fases que se inicia com o setup, exercice e verify. Com os mocks, a parte de verify onde ele atua, deve ser executada antes dos exercise, é como se o teste estivesse dizendo o que ele vai esperar do exercise, qual deve ser o comportamento dele
