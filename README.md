@@ -192,3 +192,13 @@ end
 * são usado no verify, testam comportamentos
 * mocks expectations: expect(obj). to receive(:method)
 * dentro de um bloco de testes, temos as 4 fases que se inicia com o setup, exercice e verify. Com os mocks, a parte de verify onde ele atua, deve ser executada antes dos exercise, é como se o teste estivesse dizendo o que ele vai esperar do exercise, qual deve ser o comportamento dele
+
+*mocks expectations*
+* Restrição de argumento: expect(student).to receive(:foo).with(123) # restringe qual vai ser a resposta do argumento
+* contagem de mensagens: se um metodo é chamado mais de uma vez, podemos utilizar esta SPEC de contagens:
+    * .onde
+    * .twice
+    * .exactly(n).times
+    * .at_least(:once) ou (:twice) # pelo menos uma ou duas vezes
+    * .at_least(n).times # pelo menos n vezes
+* com valor de retorno: diz qual é o valor de retorno esperado
