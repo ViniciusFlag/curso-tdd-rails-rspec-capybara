@@ -8,6 +8,8 @@ RSpec.describe Customer, type: :model do
     # customer = customers(:vinicius) # feito com fixture
     customer = create(:customer) #feito com factories
 
-    expect(customer.full_name).to eq("Sr. Vinicius") 
+    expect(customer.full_name).to start_with("Sr. ") 
   end
+
+  it { expect{ create(:customer) }.to change { Customer.all.size }.by(1) }
 end

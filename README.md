@@ -262,5 +262,8 @@ end
                 end
             end
     
-
+*Gem Faker*
+* Gera dados dinamicos utilizando a gem faker:
+    * gem 'faker'
+    * require 'faker'
 
