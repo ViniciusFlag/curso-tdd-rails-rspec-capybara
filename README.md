@@ -234,3 +234,13 @@ end
             routing_specs: false
         end
     end
+
+# Sec. 2: Factory Girl/Bot e VCR
+
+*Fixtures*
+* Antecede o factory girl
+* configurar o rails_helper, devemos criar uma pasta dentre de spec chamada fixtures
+    config.fixture_paths = [
+        Rails.root.join('spec/fixtures')
+    ]   
+* São facilitadores, criam arquivos que simulam os objetos
