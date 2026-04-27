@@ -182,3 +182,8 @@ end
 
 *Stubs*
 * Força uma resposta especifica para um determinado método de um objeto colaborador
+
+*Methods Stubs*
+* restrição de argumentos: 
+    * with: restrige quais argumentos um metodo vai receber
+* argumentos dinamicos:
