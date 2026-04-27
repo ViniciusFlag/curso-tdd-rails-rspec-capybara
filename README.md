@@ -244,3 +244,23 @@ end
         Rails.root.join('spec/fixtures')
     ]   
 * São facilitadores, criam arquivos que simulam os objetos
+
+*FactoryGirl (Bot)*
+* É a evolução das fixtures
+* é necessario fazer a inclusão da gem
+    * gem 'factory_bot_rails'
+    * bundle
+* incluir configuração no rails_helper
+    * config.include FactoryBot::Syntax::Methods
+* Definindo as Factories
+    * deve ser adicionado uma pasta dentro de spec
+        * spec/factories e devem ser configurados da seguinte forma:
+            FactoryBot.define do
+                factory :customer do
+                    name { "Vinicius" }
+                    email { "vinicius@mail.com" }
+                end
+            end
+    
+
+
