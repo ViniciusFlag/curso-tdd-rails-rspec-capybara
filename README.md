@@ -205,3 +205,32 @@ end
 
 *Métodos "As Null Object"*
 * são semelhantes aos dubles de testes
+
+*Congigurando o rails com rspec*
+* rails new name_app -T: comando para criar um projeto sem a configuração padrão de testes do rails
+* o RSpec tem uma gem especifica para o rails
+* https://github.com/rspec/rspec-rails
+* adicionar a gem no Gemfile: 
+    group :development, :test do
+        gem 'rspec-rails', '~> 8.0.0'
+    end
+* executar o comando de instalação de pacotes
+    * bundle install
+* executar o comando para congigurar o rspec:
+    rails generate rspec:install
+* configurar o binario do rspec:
+    group :development do
+        gem 'spring-commands-rspec'
+    end
+* executar comando de instalação de pacotes especifico com bin:
+    * bundle install
+    * bundle exec spring binstub --all
+* como a configuração do rails foi feita sem os testes, é necessario fazer a seguinte configuração:
+    config.generators do |g|
+        g.test_framework :rspec,
+            fixtures: false,
+            view_specs: false,
+            helper_specs: false,
+            routing_specs: false
+        end
+    end
