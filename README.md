@@ -202,3 +202,6 @@ end
     * .at_least(:once) ou (:twice) # pelo menos uma ou duas vezes
     * .at_least(n).times # pelo menos n vezes
 * com valor de retorno: diz qual é o valor de retorno esperado
+
+*Métodos "As Null Object"*
+* são semelhantes aos dubles de testes
