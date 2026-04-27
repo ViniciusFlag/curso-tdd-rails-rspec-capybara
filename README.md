@@ -266,4 +266,15 @@ end
 * Gera dados dinamicos utilizando a gem faker:
     * gem 'faker'
     * require 'faker'
+        FactoryBot.define do
+            factory :customer do
+                name { Faker::Name.name }
+                email { Faker::Internet.email  }
+            end
+        end
 
+*Sobrescrevendo atributos e aliases para fabricas*
+* é possivel sobrescrever um atributo gerado pelo faker:
+    * customer = create(:customer, name: "Vinicius")
+* voce pode colocar apelidos para as fabricas:
+    * factory :customer, aliases: [:user] do
