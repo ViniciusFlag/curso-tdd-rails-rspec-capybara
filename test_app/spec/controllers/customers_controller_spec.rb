@@ -27,11 +27,23 @@ RSpec.describe CustomersController, type: :controller do
       @customer = create(:customer)
     end
 
+    it 'Route' do
+      is_expected.to route(:get, '/customers').to(action: :index)
+    end
+
     it 'Content-Type JSON' do
       customer_params = attributes_for(:customer)
       sign_in @member
       post :create, format: :json, params: { customer: customer_params }
       expect(response.content_type).to match(/application\/json/)
+    end
+
+    it 'with invalid attributes' do
+      customer_params = attributes_for(:customer, address: nil)
+      sign_in @member
+      expect{
+        post :create, params: { customer: customer_params }
+      }.not_to change(Customer, :count)
     end
 
     it 'Flash Notice' do
