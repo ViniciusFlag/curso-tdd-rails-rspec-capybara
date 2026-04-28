@@ -298,3 +298,9 @@ end
     * after(:build)
     * before(:create)
     * after(:create)
+
+*Sequences*
+* sequencias numericas dentro do factorybot
+    * sequence(:email) {|n| "meu_email#{n}@email.com"}
+    * sequence(:email, 35) {|n| "meu_email#{n}@email.com"} # iniciando com
+    * sequence(:email, 'a') {|n| "meu_email#{n}@email.com"}

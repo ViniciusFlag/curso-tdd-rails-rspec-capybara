@@ -8,7 +8,7 @@ RSpec.describe Customer, type: :model do
     # customer = customers(:vinicius) # feito com fixture
     # customer = create(:customer) #feito com factories
     customer = create(:user) # feito com aliases
-    
+    puts customer.email
     expect(customer.full_name).to start_with("Sr. ") 
   end
 

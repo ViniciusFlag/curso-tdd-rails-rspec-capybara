@@ -4,8 +4,9 @@ FactoryBot.define do
             upcased { false }
         end
         name { Faker::Name.name }
-        email { Faker::Internet.email  }
-        gender { ['M', 'F'].sample }
+        # email { Faker::Internet.email  }
+
+        sequence(:email) {|n| "meu_email-#{n}@email.com"}
 
         trait :male do
             gender {"M"}
