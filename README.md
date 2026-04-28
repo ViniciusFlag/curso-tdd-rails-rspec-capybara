@@ -305,4 +305,7 @@ end
     * sequence(:email, 35) {|n| "meu_email#{n}@email.com"} # iniciando com
     * sequence(:email, 'a') {|n| "meu_email#{n}@email.com"}
 
-*Associações (belongs_to)*
+*Create list*
+* uma lista de factorys
+    * create_list(:order, 3)
+    * create_list(:order, 3, atributo: value)
