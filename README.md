@@ -309,3 +309,5 @@ end
 * uma lista de factorys
     * create_list(:order, 3)
     * create_list(:order, 3, atributo: value)
+
+*Associações(has_many)*
