@@ -285,3 +285,7 @@ end
 
 *Atributes for*
 * ele gera um hash com os atributos extraidos de uma factory
+
+*Atributo transitorios (Transient Attributes)*
+* São atributos passageiros
+* voce pode setar que um atributo não podera ser alterado
