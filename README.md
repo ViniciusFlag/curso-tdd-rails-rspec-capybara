@@ -312,3 +312,7 @@ end
 
 *FactoryBot Lint*
 * Verifica as validações das minha factorys, se caso algo que precise estar preenchodo e não esta, ele vai dar i aviso
+
+*HTTPParty*
+* é uma gem que permite fazer acesso a rede
+    * gem 'httparty'
