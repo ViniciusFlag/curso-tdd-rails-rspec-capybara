@@ -292,3 +292,9 @@ end
 
 *Traits*
 * agrupa atributos e gera novas fabricas
+
+*Callbacks*
+* São como funções que podem ser chamadas antes ou depois de alguma determinada ação
+    * after(:build)
+    * before(:create)
+    * after(:create)
