@@ -278,3 +278,7 @@ end
     * customer = create(:customer, name: "Vinicius")
 * voce pode colocar apelidos para as fabricas:
     * factory :customer, aliases: [:user] do
+    * customer = create(:user)
+
+*Herança*
+* Posso criar uma fabrica dentro de outra
