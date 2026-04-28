@@ -22,7 +22,8 @@ VCR.configure do |config|
   config.filter_sensitive_data('<API-URL>') { 'https://jsonplaceholder.typicode.com' }
 end
 RSpec.configure do |config|
-
+  config.order = "random"
+  
   # FactoryBot Lint
   config.before(:suite) do 
     FactoryBot.lint
