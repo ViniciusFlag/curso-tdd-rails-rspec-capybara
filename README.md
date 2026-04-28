@@ -289,3 +289,6 @@ end
 *Atributo transitorios (Transient Attributes)*
 * São atributos passageiros
 * voce pode setar que um atributo não podera ser alterado
+
+*Traits*
+* agrupa atributos e gera novas fabricas

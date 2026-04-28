@@ -38,4 +38,10 @@ RSpec.describe Customer, type: :model do
     customer = create(:customer, upcased: true)
     expect(customer.name.upcase).to  eq(customer.name)
   end
+
+  it "Cliente Masculino" do
+    customer = create(:customer_male_vip)
+    expect(customer.gender).to eq("M")
+    expect(customer.vip).to eq(true)
+  end
 end
