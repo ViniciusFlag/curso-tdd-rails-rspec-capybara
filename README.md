@@ -316,3 +316,6 @@ end
 *HTTPParty*
 * é uma gem que permite fazer acesso a rede
     * gem 'httparty'
+
+*Webmock*
+* é uma gem que possibilita fazer stub de http
