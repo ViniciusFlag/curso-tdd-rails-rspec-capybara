@@ -18,6 +18,15 @@ RSpec.describe Customer, type: :model do
     expect(customer.vip).to eq(false)
   end
 
+  it "Attibuters_for" do
+    attr = attributes_for(:customer)
+    attr2 = attributes_for(:customer_vip)
+    attr3 = attributes_for(:customer_default)
+
+    customer = Customer.create(attr)
+    expect(customer.full_name).to start_with("Sr. ") 
+  end
+  
   it "Sobrescrever um atibuto" do
     customer = create(:customer, name: "Vinicius")
     expect(customer.full_name).to eq("Sr. Vinicius");

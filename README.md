@@ -282,3 +282,6 @@ end
 
 *Herança*
 * Posso criar uma fabrica dentro de outra
+
+*Atributes for*
+* ele gera um hash com os atributos extraidos de uma factory
