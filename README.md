@@ -310,4 +310,5 @@ end
     * create_list(:order, 3)
     * create_list(:order, 3, atributo: value)
 
-*Associações(has_many)*
+*FactoryBot Lint*
+* Verifica as validações das minha factorys, se caso algo que precise estar preenchodo e não esta, ele vai dar i aviso
