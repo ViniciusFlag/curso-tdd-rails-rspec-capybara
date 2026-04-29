@@ -15,6 +15,11 @@
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require "webmock/rspec"
+
+require "json_matchers/rspec"
+
+JsonMatchers.schema_root = "spec/support/api/schemas"
+
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
