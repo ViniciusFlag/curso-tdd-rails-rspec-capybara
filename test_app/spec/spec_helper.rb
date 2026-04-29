@@ -20,7 +20,17 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<API-URL>') { 'https://jsonplaceholder.typicode.com' }
+  config.ignore_localhost = true
+  config.allow_http_connections_when_no_cassette = true
 end
+
+Capybara.register_driver :chrome do |app|
+ Capybara::Selenium::Driver.new app, browser: :chrome, 
+  options: Selenium::WebDriver::Chrome::Options.new(args: %w[headless disable-gpu])
+end
+
+Capybara.javascript_driver = :chrome
+
 RSpec.configure do |config|
   config.order = "random"
   
