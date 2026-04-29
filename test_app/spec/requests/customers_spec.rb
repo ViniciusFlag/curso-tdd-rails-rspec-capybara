@@ -27,7 +27,7 @@ RSpec.describe "Customers", type: :request do
       )
     end
 
-    it "crate - JSON" do 
+    it "create - JSON" do 
       member = create(:member)
       login_as(member, scope: :member)
 
@@ -41,6 +41,25 @@ RSpec.describe "Customers", type: :request do
         id: /\d/,
         name: customers_params.fetch(:name),
         email: customers_params.fetch(:email),
+      )
+    end
+
+    it "update - JSON" do 
+      member = create(:member)
+      login_as(member, scope: :member)
+
+      headers = { "ACCEPT" => "application/json" }
+
+      customer = create(:customer)
+      # customer = Customer.first
+      customer.name += " - ATUALIZADO"
+
+      patch "/customers/#{customer.id}.json", params: { customer: customer.attributes }, headers: headers
+
+      expect(response.body).to  include_json(
+        id: /\d/,
+        name: customer.name,
+        email: customer.email,
       )
     end
   end
