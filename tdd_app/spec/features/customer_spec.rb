@@ -28,7 +28,7 @@ feature "Customers", type: :feature do
     fill_in("Nome",	with: customer_name)
     fill_in("Email",	with: Faker::Internet.email)
     fill_in("Telefone",	with: Faker::PhoneNumber.phone_number)
-    attach_file("Foto do Perfil",	"#{Rails.root}/spec/fixtures/avatar.png")
+    attach_file("Foto do Perfil",	"#{Rails.root}/spec/fixtures/avatar.jpg")
     choose(option: ["S", "N"].sample)
     click_on("Criar Cliente")
 
