@@ -123,4 +123,21 @@ feature "Customers", type: :feature do
 
     expect(page).to have_content("Editando Cliente") 
   end
+
+  scenario "Apagando um cliente", js: true do
+    customer = Customer.create!(
+      name: Faker::Name.name,
+      email: Faker::Internet.email,
+      phone: Faker::PhoneNumber.phone_number,
+      smoker: ["S", "N"].sample,
+      avatar: "#{Rails.root}/spec/fixtures/avatar.jpg"
+    )
+
+    visit(customers_path)
+    accept_confirm do
+      find(:xpath, "/html/body/table/tbody/tr[1]/td[4]/a").click
+    end
+
+    expect(page).to have_content("Cliente excluido com sucesso!")
+  end
 end
