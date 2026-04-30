@@ -13,7 +13,7 @@ class CustomersController < ApplicationController
     if @customer.save
       redirect_to customers_path, notice: "Cliente cadastrado com sucesso!"
     else
-      render :new
+      render :new, status: 401
     end
   end
 
